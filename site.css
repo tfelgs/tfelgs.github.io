@@ -23,30 +23,7 @@
   pointer-events: none;
   mix-blend-mode: multiply;
   z-index: 10;
-}
-
-.circle {
-  background: blue;
-}
-
-.circle2 {
-  background: red;
-}
-
-.circle3 {
-  background: green;
-}
-
-.circle4 {
-  background: purple;
-}
-
-.circle5 {
-  background: orangered;
-}
-
-.circle6 {
-  background: darkred;
+  background: lightblue;
 }
 
 html,
@@ -56,36 +33,10 @@ body {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-image: linear-gradient(to bottom right, rgb(247, 247, 247), rgb(67, 120, 190));
+  background-image: linear-gradient(to bottom right, rgb(119, 51, 51), rgb(204, 165, 165));
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-
-p {
-  margin: 0.5em 0 0.5em 0;
-}
-
-@keyframes slideInLeft {
-  0% {
-    transform: translateX(-100%);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
-.banner {
-  max-width: 20%;
-  margin: 0 auto;
-  padding: 10px;
-  animation: 1s ease-out 0s 1 slideInLeft;
-}
-
-.sub-title {
-  font-size: 1.5em;
-  background-color: transparent;
-  padding: 10px;
+  padding-bottom: 10px;
 }
 
 header {
@@ -95,16 +46,78 @@ header {
   left: 0;
   width: 100%;
   padding: 20px;
-  background-color: white;
+  background-color: rgb(73, 73, 73);
   text-align: center;
-  font-size: 1.5em;
-  border-bottom: 5px solid;
+  font-size: 2vw;
+  border-bottom: 3px solid;
   border-image: linear-gradient(to right, lightblue, white) 5;
+}
+
+main {
+  display: block;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  min-height: 85%;
+}
+
+.index-p-1 {
+  font-size: 1.35vw;
+  color: whitesmoke;
+  background-color: transparent;
+  margin-right: 30vw;
+  padding-top: 5em;
+}
+
+h1 {
+  font-size: 7vw;
+  color: whitesmoke;
+  text-align: center;
+  animation: 1s ease-out 0s 1 slideInLeft;
+  margin-top: 20px;
+} 
+
+.Index Title {
+  font-size: 7vw;
+  color: whitesmoke;
+  text-align: center;
+  animation: 1s ease-out 0s 1 slideInLeft;
+} 
+
+.banner {
+  max-width: 20%;
+  margin: 50px;
+  animation: 1s ease-out 0s 1 slideInLeft;
+}
+
+.index-p-2 {
+  font-size: .9em;
+  color: whitesmoke;
+  padding: 10px;
+}
+
+article>p a {
+  color: goldenrod;
+}
+
+.index-p-3 {
+  font-size: 1em;
+  color: whitesmoke;
+  padding: 10px;
+}
+
+footer {
+  font-size: 1.9vw;
+  padding: 10px;
+  background-color: rgb(73, 73, 73);
+  border-image: linear-gradient(to right, lightblue, white) 5;
+  text-align: center;
+  border-top: 2px solid darkblue;
+  bottom: 0;
 }
 
 nav a:visited,
 nav a:link {
-  color: black;
+  color: whitesmoke;
   text-decoration: none;
 }
 
@@ -121,30 +134,7 @@ nav>ul>li {
 
 nav>ul>li a:hover {
   list-style: none;
-  color: rgb(118, 198, 224);
-}
-
-main {
-  display: block;
-  padding-top: 3em;
-  padding-bottom: 3em;
-  min-height: 85%;
-}
-
-h1 {
-  font-size: 7em;
-  margin-top: 0.5em;
-  color: whitesmoke;
-  text-align: center;
-  padding: .5em;
-  animation: 1s ease-out 0s 1 slideInLeft;
-}
-
-footer {
-  padding: 10px;
-  background-color: white;
-  text-align: center;
-  border-top: 2px solid darkblue;
+  color: goldenrod;
 }
 
 aside,
@@ -159,11 +149,9 @@ aside {
 article {
   width: 75%;
   margin: 0 auto;
+  font-size: 1.5vw;
 }
 
-article>p a {
-  color: black;
-}
 
 article>p a:hover {
   list-style: none;
@@ -183,8 +171,18 @@ article>p a:hover {
   main {
     display: flex;
   }
-
+  
   .columns-desktop {
     display: flex;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  
+  100% {
+    transform: translateX(0);
   }
 }
