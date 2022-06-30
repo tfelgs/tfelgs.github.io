@@ -5,64 +5,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="fontawesome-free-6.1.1-web/css/all.css">
     <link rel="stylesheet" href="site.css" type="text/css">
     <script src="dist/kinet.js"></script>
-    <script type="module" src="snake.js"></script>
+    <script type="module" src="animations.js"></script>
     <title>Tyler Felgenhauer's Website</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <article>
-            <p class="index-p-1">
-                Hello! My Name is
-            </p>
-            <h1 class="Index Title">Tyler Felgenhauer</h1>
-            <img src="images/profile-pic.JPG" class="banner" alt="Picture of me">
-            <p class="index-p-2">
-                Pellentesque habitant morbi tristique senectus et netus et malesuada fames 
-                ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, 
-                tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean 
-                ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et 
-                sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo 
-                vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, 
-                eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in 
-                turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, 
-                tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. 
-                Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus 
-            </p>
-            <p class="index-p-3">
-                Take a moment to <a href="about.html">get to know me!</a>
-            </p>
-        </article>
-    </main>
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </footer>
-    <div class="snake">
-        <div id="circle" class="circle"></div>
-        <div id="circle2" class="circle2"></div>
-        <div id="circle3" class="circle3"></div>
-        <div id="circle4" class="circle4"></div>
-        <div id="circle5" class="circle5"></div>
-        <div id="circle6" class="circle6"></div>
+    <div id="page-container">
+        <div id="content-wrap">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <article>
+                    <p class="p-1">
+                        Hello! My Name is
+                    </p>
+                    <h1 class="Index Title">Tyler Felgenhauer</h1>
+                    <div class="media">
+                        <li><a href="https://github.com/tfelgs" class="github">
+                                <i-1 class="fa-brands fa-github fa-2x"></i-1></a></li>
+                        <li><a href="https://linkedin.com/in/tyler-felgenhauer" class="linkedin btn btn-block">
+                                <i-2 class="fa-brands fa-linkedin-in fa-2x"></i-2></a></li>
+                        <li><a href="mailto:tfelgs77@gmail.com" class="email btn btn-block">
+                                <i-2 class="fa-solid fa-envelope fa-2x"></i-3></a></li>
+                    </div>
+                    <img src="images/profile-pic.JPG" class="banner" alt="Picture of me">
+                    <p class="p-2">
+                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+                        ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget,
+                        tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
+                        ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et
+                        sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo
+                        vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum,
+                        eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in
+                        turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus,
+                        tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat.
+                        Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+                    </p>
+                    <p class="p-3">
+                        Take a moment to <a href="about.html">get to know me!</a>
+                    </p>
+                </article>
+            </main>
+            <footer>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </footer>
+        </div>
     </div>
+    <div id="circle" class="circle"></div>
 </body>
+
 </html>
