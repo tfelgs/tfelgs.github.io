@@ -40,7 +40,8 @@ body {
 }
 
 #content-wrap {
-  padding-bottom: 2.5rem;    /* Footer height */
+  padding-bottom: 2.5rem;
+  /* Footer height */
 }
 
 header {
@@ -86,14 +87,14 @@ h1 {
   animation: 1s ease-out 0s 1 slideInLeft;
   margin-top: 20px;
   margin-bottom: 1em;
-} 
+}
 
 .Index Title {
   font-size: 7vw;
   color: rgb(255, 255, 255);
   text-align: center;
   animation: 1s ease-out 0s 1 slideInLeft;
-} 
+}
 
 .media {
   float: left;
@@ -186,7 +187,7 @@ aside {
   main {
     display: flex;
   }
-  
+
   .columns-desktop {
     display: flex;
   }
@@ -197,7 +198,7 @@ aside {
     opacity: 0;
     transform: translateX(-100%);
   }
-  
+
   100% {
     transform: translateX(0);
   }
@@ -218,30 +219,36 @@ aside {
 @keyframes animate-drop {
   0% {
     opacity: 0;
-    transform: translate(0,-300px) scale(0.9, 1.1);
+    transform: translate(0, -300px) scale(0.9, 1.1);
   }
+
   95% {
     opacity: 1;
     transform: translate(0, 0) scale(0.9, 1.1);
   }
+
   96% {
     opacity: 1;
     transform: translate(10px, 0) scale(1.2, 0.9);
   }
+
   97% {
     opacity: 1;
     transform: translate(-10px, 0) scale(1.2, 0.9);
   }
+
   98% {
     opacity: 1;
     transform: translate(5px, 0) scale(1.1, 0.9);
   }
+
   99% {
     opacity: 1;
     transform: translate(-5px, 0) scale(1.1, 0.9);
   }
+
   100% {
     opacity: 1;
     transform: translate(0, 0) scale(1, 1);
-    }
   }
+}
