@@ -7,6 +7,7 @@
   box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 .circle {
   width: 2vw;
   height: 2vw;
@@ -21,6 +22,8 @@
   background: lightblue;
 }
 
+=======
+>>>>>>> 44579a84d68383e64ec08df97461c55686c7fe20
 html,
 body {
   height: 100%;
@@ -130,7 +133,11 @@ i-3:hover {
 }
 
 .banner {
+<<<<<<< HEAD
   max-width: 55%;
+=======
+  max-width: 60%;
+>>>>>>> 44579a84d68383e64ec08df97461c55686c7fe20
   margin: 50px;
   margin-bottom: 7em;
 }
@@ -139,14 +146,19 @@ i-3:hover {
   font-size: 0.9em;
   color: whitesmoke;
   padding: 10px;
+<<<<<<< HEAD
   margin-bottom: 7rem;
   line-height: 35px;
+=======
+  margin-bottom: 30px;
+>>>>>>> 44579a84d68383e64ec08df97461c55686c7fe20
 }
 
 .p-3 {
   font-size: 1em;
   color: whitesmoke;
   padding: 10px;
+  margin-bottom: 50px;
 }
 
 article > p a {
@@ -189,6 +201,20 @@ nav > ul > li {
 
 nav > ul > li a:hover {
   color: goldenrod;
+}
+
+.circle {
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -1vw 0 0 -.6vw;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+  z-index: 10;
+  background: lightblue;
 }
 
 aside {

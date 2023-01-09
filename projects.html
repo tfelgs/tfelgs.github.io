@@ -16,35 +16,163 @@
   </head>
   <body>
     <div id="page-container">
-      <div id="content-wrap">
-        <header>
-          <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="projects.html">Projects</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
-        </header>
-        <main>
-          <article>
-            <p class="p-1"></p>
-            <h1>Projects</h1>
-            <p class="p-3"></p>
-          </article>
-        </main>
-        <footer>
-          <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="projects.html">Projects</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
-        </footer>
-      </div>
+        <div id="content-wrap">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <article>
+                    <p class="p-1">
+                    </p>
+                    <h1>Projects</h1>
+                    <p class="p-3">
+                        <div>
+                            <p>
+                                These are a few of my projects that I have worked on, feel free to email me if you have more questions or are interested in learning more about what I did.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                              <div class="card">
+                                <div class="cardTitle">
+                                    Apto 
+                                </div>
+                                <br>
+                                <div class="cardText">
+                                    Apto is designed to help everyone learn more information on what supplements to take for a variety of performance 
+                                    or health related goals. Many businesses are not explaining the basic effect or goal of these supplements, but 
+                                    rather sayinig it will just make you look like whatever influencer is marketing the product. Apto will allow users 
+                                    to become more aware of what they are taking and the overall effect it has on their actual performance or health.
+                                </div>
+                                <br>
+                                <div class="cardTools">
+                                    • Developed a web application using the MERN stack to inform users on different health supplements. <br>
+                                    • Used Semantic UI React for flexible theming support.	 <br>
+                                    • Collaborated with and led a team of 3 to achieve goals and meet deadlines. 
+                                </div>
+                                <br>
+                                <img src="images/Apto1.PNG" class="project" alt="Home Page 1/2">
+                                <img src="images/Apto2.PNG" class="project" alt="Home Page 2/2">
+                                <img src="images/Apto3.PNG" class="project" alt="Supplement Index">
+                              </div>
+                            </div>
+                            <div class="column">
+                                <div class="card">
+                                    <div class="cardTitle">
+                                        Grocery Management System 
+                                    </div>
+                                    <br>
+                                    <div class="cardText">
+                                        Fake grocery data was created based on Walmart's cereal aisle. When users first run the program 
+                                        they can either log in as a manager or cutomer. Customers purchase cereal and managers print reports. 
+                                        These reports can be, for example, calculating average prices, finding what cereals are under or 
+                                        above a certain stock, and a record of sales for a certain product. After completing a sale product 
+                                        inventory can be queried to show the updated amount along with many other functions.     
+                                    </div>
+                                    <br>
+                                    <div class="cardTools">
+                                        • Used Python to return managerial reports based on grocery data. <br>
+                                        • SQLite and Pandas were used to help read, analyze, and query data. <br>
+                                        • Updated inventory and new costs were updated as a customer shopped the system. 
+                                    </div>
+                                    <br>
+                                    <img src="images/Grocery1.PNG" class="project" alt="As customer">
+                                    <img src="images/Grocery2.PNG" class="project" alt="As customer">
+                                    <img src="images/Grocery3.PNG" class="project" alt="As manager">
+                                    <img src="images/Grocery4.PNG" class="project" alt="As manager">
+                                </div>
+                            </div>
+                        </div>
+                    </p>
+                </article>
+            </main>
+            <footer>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </footer>
+        </div>
     </div>
-  </body>
+</body>
+<style>
+    * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cardTitle {
+    font-size: 40px;
+}
+
+.cardText {
+    font-size: 20px;
+}
+
+.cardTools {
+    font-size: 17px;
+text-align: left;
+}
+
+p {
+    font-size: .9em;
+  color: whitesmoke;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.project {
+  max-width: 95%;
+  margin: 20px;
+  border: solid 1px black;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+</style>
 </html>
