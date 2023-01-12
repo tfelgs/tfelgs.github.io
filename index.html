@@ -1,70 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="fontawesome-free-6.1.1-web/css/all.css">
-    <link rel="stylesheet" href="site.css" type="text/css">
-    <script src="dist/kinet.js"></script>
-    <script type="module" src="animations.js"></script>
-    <title>Tyler Felgenhauer's Website</title>
-</head>
-
-<body>
-    <div id="page-container">
-        <div id="content-wrap">
-            <header>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <main>
-                <article>
-                    <p class="p-1">
-                        Hello! My Name is
-                    </p>
-                    <h1 class="Index Title">Tyler Felgenhauer</h1>
-                    <div class="media">
-                        <li><a href="https://github.com/tfelgs" class="github">
-                                <i-1 class="fa-brands fa-github fa-2x"></i-1>
-                            </a></li>
-                        <li><a href="https://linkedin.com/in/tyler-felgenhauer" class="linkedin btn btn-block">
-                                <i-2 class="fa-brands fa-linkedin-in fa-2x"></i-2>
-                            </a></li>
-                        <li><a href="mailto:tfelgs77@gmail.com" class="email btn btn-block">
-                                <i-2 class="fa-solid fa-envelope fa-2x">
-                                    </i-3>
-                            </a></li>
-                    </div>
-                    <img src="images/profesional-pic.JPG" class="banner" alt="Picture of me">
-                    <p class="p-2">
-                        Welcome! This website is dedicated to help others learn more about me and to keep track of my <a href="projects.html">projects</a> that I am currently working on. 
-                    </p>
-                    <p class="p-3">
-                        Take a moment to <a href="about.html">get to know me!</a>
-                    </p>
-                </article>
-            </main>
-            <footer>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </footer>
-        </div>
-    </div>
-    <div id="circle" class="circle"></div>
-</body>
-
+<html>
+	<head>
+		<title>Home</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	<body>
+		<header id="header">
+			<div class="container">
+				<hl id="logo">Tyler Felgenhauer</hl>
+				<nav class="main-nav">
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section class="banner" id="home">
+			<img src="images\Iowa State Background.jpg" />
+		</section>
+		<section class="about-section" id="about">
+			<div class="container2">
+				<div>
+					<h1 class="title" id="aboutTitle">About Me</h1>
+					<img src="images\profesional-pic.JPG" id="proffesional" />
+				</div>
+				<p class="text">
+					I currently attend Iowa State University, expecting to graduate after the spring semester
+					of 2023 with a double major in Management Information Systems and Business Analytics.
+					While I am a full-time student, I am also a software engineer working at TMC
+					Transportation in Ames, Iowa. Within the past 6 months I was on a team of 3 interns
+					developing a full-stack .NET web application that analyzed data for our cybersecurity
+					team. We created AWS Lambda functions, implemented web scraping, set up a Power BI
+					dashboard, and designed new tables in our database all while utilizing agile methodology
+					on an Azure DevOps board. I am looking for a software engineering position in the Chicago
+					area after my graduation in the spring of 2023.
+				</p>
+			</div>
+		</section>
+		<section class="projects-section" id="projects">
+			<div class="container2">
+				<h1 class="title">My Projects</h1>
+				<div class="row">
+					<div class="column">
+						<div class="card">
+							<div class="cardTitle">Apto</div>
+							<br />
+							<div class="cardText">
+								Apto is designed to help everyone learn more information on what supplements to take
+								for a variety of performance or health related goals. Many businesses are not
+								explaining the basic effect or goal of these supplements, but rather sayinig it will
+								just make you look like whatever influencer is marketing the product. Apto will
+								allow users to become more aware of what they are taking and the overall effect it
+								has on their actual performance or health.
+							</div>
+							<br />
+							<div class="cardTools">
+								• Developed a web application using the MERN stack to inform users on different
+								health supplements. <br />
+								• Used Semantic UI React for flexible theming support. <br />
+								• Collaborated with and led a team of 3 to achieve goals and meet deadlines.
+							</div>
+							<br />
+						</div>
+					</div>
+					<div class="column">
+						<div class="card">
+							<div class="cardTitle">Grocery Management System</div>
+							<br />
+							<div class="cardText">
+								Fake grocery data was created based on Walmart's cereal aisle. When users first run
+								the program they can either log in as a manager or cutomer. Customers purchase
+								cereal and managers print reports. These reports can be, for example, calculating
+								average prices, finding what cereals are under or above a certain stock, and a
+								record of sales for a certain product. After completing a sale product inventory can
+								be queried to show the updated amount along with many other functions.
+							</div>
+							<br />
+							<div class="cardTools">
+								• Used Python to return managerial reports based on grocery data. <br />
+								• SQLite and Pandas were used to help read, analyze, and query data. <br />
+								• Updated inventory and new costs were updated as a customer shopped the system.
+							</div>
+							<br />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="contact-section" id="contact">
+			<div class="container2">
+				<h1 class="title">Contact Me</h1>
+				<p class="text">
+					I currently attend Iowa State University, expecting to graduate after the spring semester
+					of 2023 with a double major in Management Information Systems and Business Analytics.
+					While I am a full-time student, I am also a software engineer working at TMC
+					Transportation in Ames, Iowa. Within the past 6 months I was on a team of 3 interns
+					developing a full-stack .NET web application that analyzed data for our cybersecurity
+					team. We created AWS Lambda functions, implemented web scraping, set up a Power BI
+					dashboard, and designed new tables in our database all while utilizing agile methodology
+					on an Azure DevOps board. I am looking for a software engineering position in the Chicago
+					area after my graduation in the spring of 2023.
+				</p>
+				<p class="text">
+					I currently attend Iowa State University, expecting to graduate after the spring semester
+					of 2023 with a double major in Management Information Systems and Business Analytics.
+					While I am a full-time student, I am also a software engineer working at TMC
+					Transportation in Ames, Iowa. Within the past 6 months I was on a team of 3 interns
+					developing a full-stack .NET web application that analyzed data for our cybersecurity
+					team. We created AWS Lambda functions, implemented web scraping, set up a Power BI
+					dashboard, and designed new tables in our database all while utilizing agile methodology
+					on an Azure DevOps board. I am looking for a software engineering position in the Chicago
+					area after my graduation in the spring of 2023.
+				</p>
+				<p class="text">
+					I currently attend Iowa State University, expecting to graduate after the spring semester
+					of 2023 with a double major in Management Information Systems and Business Analytics.
+					While I am a full-time student, I am also a software engineer working at TMC
+					Transportation in Ames, Iowa. Within the past 6 months I was on a team of 3 interns
+					developing a full-stack .NET web application that analyzed data for our cybersecurity
+					team. We created AWS Lambda functions, implemented web scraping, set up a Power BI
+					dashboard, and designed new tables in our database all while utilizing agile methodology
+					on an Azure DevOps board. I am looking for a software engineering position in the Chicago
+					area after my graduation in the spring of 2023.
+				</p>
+			</div>
+		</section>
+		<section class="footer-section" id="footer">
+			<div class="container2">
+				<nav class="footer-nav">
+					<ul>
+						<li><a href="#home">Back To Top</a></li>
+					</ul>
+				</nav>
+			</div>
+		</section>
+	</body>
 </html>

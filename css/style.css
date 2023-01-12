@@ -1,0 +1,179 @@
+body,
+html {
+	margin: 0;
+	font-family: arial;
+	font-size: 18px;
+	scroll-behavior: smooth;
+	line-height: 1.5em;
+}
+
+#header {
+	background-color: rgba(0, 0, 0, 0.8);
+	padding: 20px 0;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+
+.container {
+	width: 86%;
+	margin: 0 auto;
+}
+
+.container2 {
+	width: 86%;
+	margin: 0 auto;
+	height: 100%;
+}
+
+.title {
+	font-size: 3vw;
+	margin-bottom: 13vh;
+}
+
+#header .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#logo {
+	color: white;
+	font-size: 2vw;
+}
+
+.main-nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.main-nav ul li {
+	float: left;
+	margin-left: 35px;
+	font-family: 18px;
+}
+
+.main-nav ul li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.banner img {
+	max-width: 100%;
+	vertical-align: top;
+}
+
+.about-section,
+.projects-section,
+.contact-section {
+	height: 100%;
+	align-items: center;
+	padding-top: 10vh;
+	display: inline-block;
+}
+
+.about-section {
+	background: rgba(194, 168, 147, 0.8);
+}
+
+#aboutTitle {
+	float: left;
+}
+
+#proffesional {
+	max-width: 28vw;
+	left: 40vw;
+	margin-left: 30vw;
+	margin-top: 40px;
+}
+
+.text {
+	margin: 6vh;
+}
+
+.projects-section {
+	background: rgb(179, 160, 133);
+}
+
+.contact-section {
+	background: rgb(167, 151, 121);
+}
+
+.footer-section {
+	background: black;
+	display: flex;
+	align-items: center;
+}
+
+.footer-section .container {
+	text-align: center;
+}
+
+.footer-nav ul li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.main-nav ul li a:hover,
+.footer-nav ul li a:hover {
+	color: goldenrod;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.cardTitle {
+	font-size: 40px;
+}
+
+.cardText {
+	font-size: 20px;
+}
+
+.cardTools {
+	font-size: 17px;
+	text-align: left;
+}
+
+.column {
+	float: left;
+	width: 50%;
+	padding: 0 10px;
+}
+
+.row {
+	margin: 0 -5px;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+	padding: 16px;
+	text-align: center;
+	background-color: #f1f1f1;
+	display: inline-block;
+}
+
+@media screen and (max-width: 600px) {
+	.title {
+		font-size: 3vh;
+	}
+	#proffesional {
+		max-width: 50vw;
+		margin-left: 90px;
+	}
+	.column {
+		width: 100%;
+		margin-bottom: 20px;
+		display: block;
+		float: none;
+	}
+}
