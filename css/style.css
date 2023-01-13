@@ -90,6 +90,12 @@ html {
 	margin-top: 40px;
 }
 
+#proffesional2 {
+	max-width: 18vw;
+	float: left;
+	margin-right: 10vw;
+}
+
 .text {
 	margin: 6vh;
 	margin-top: 20vh;
@@ -204,6 +210,10 @@ html {
 	border: solid 1px black;
 }
 
+#contactRow {
+	display: inline;
+}
+
 .media {
 	margin-top: 25vh;
 	margin-bottom: 3vh;
@@ -247,9 +257,13 @@ i-3:hover {
 	.title {
 		font-size: 3vh;
 	}
-	#proffesional {
+	#proffesional,
+	#proffesional2 {
 		max-width: 50vw;
 		margin-left: 90px;
+	}
+	#proffesional2 {
+		margin-bottom: 60px;
 	}
 	.column {
 		width: 100%;
