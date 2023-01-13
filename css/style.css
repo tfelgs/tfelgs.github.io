@@ -239,7 +239,7 @@ i-3:hover {
 	font-size: 40px;
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 900px) {
 	#logo {
 		font-size: 1.8vh;
 		margin-right: 50px;
