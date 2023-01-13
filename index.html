@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>Home</title>
+        <link rel="stylesheet" type="text/css" href="fontawesome-free-6.1.1-web/css/all.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 	</head>
 	<body>
@@ -25,7 +26,7 @@
 			<div class="container2">
 				<div>
 					<h1 class="title" id="aboutTitle">About Me</h1>
-					<img src="images\profesional-pic.JPG" id="proffesional" />
+					<img src="images\GOLD2143.JPG" id="proffesional" />
 				</div>
 				<p class="text">
 					I currently attend Iowa State University, expecting to graduate after the spring semester
@@ -64,6 +65,39 @@
 								• Collaborated with and led a team of 3 to achieve goals and meet deadlines.
 							</div>
 							<br />
+                            <button class="buttons" onclick="toggle1(this)">Click here to see more!</button>
+                            <div hidden="hidden" class="projectImgages" id="aptoImages">
+                                <img src="images/Apto1.PNG" class="project" alt="Home Page 1/2">
+                                <img src="images/Apto2.PNG" class="project" alt="Home Page 2/2">
+                                <img src="images/Apto3.PNG" class="project" alt="Supplement Index">
+                            </div>
+						</div>
+					</div>
+                    <div class="column">
+						<div class="card">
+							<div class="cardTitle">The Move</div>
+							<br />
+							<div class="cardText">
+								The Move is a web application that will be utilized by bars to inform the community on deals 
+                                and to promote their bar. Many bars do not have websites and if they do, they're most likely outdated. 
+                                This website would be extremely helpful to anyone trying to spend as little as possible. Users can find
+                                nearby places to eat or drink with the Google Maps tab, check which deals are going on according to 
+                                certain days, and also send emails to employees to get their bar sponsored on this website. 
+							</div>
+							<br />
+							<div class="cardTools">
+								• Led and taught a group of students to develop a web application using ReactJS. <br />
+                                • Displayed information for bars in the surrounding area and their corresponding deals. <br />
+                                • Used Google Maps API and Semantic UI React.
+
+							</div>
+							<br />
+                            <button class="buttons" onclick="toggle3(this)">Click here to see more!</button>
+                            <div hidden="hidden" class="projectImgages" id="moveImages">
+                                <img src="images/Apto1.PNG" class="project" alt="Home Page 1/2">
+                                <img src="images/Apto2.PNG" class="project" alt="Home Page 2/2">
+                                <img src="images/Apto3.PNG" class="project" alt="Supplement Index">
+                            </div>
 						</div>
 					</div>
 					<div class="column">
@@ -85,6 +119,13 @@
 								• Updated inventory and new costs were updated as a customer shopped the system.
 							</div>
 							<br />
+                            <button class="buttons" onclick="toggle2(this)">Click here to see more!</button>
+                            <div hidden="hidden" class="projectImgages" id="gmsImages">
+                                <img src="images/Grocery1.PNG" class="project" alt="As customer">
+                                <img src="images/Grocery2.PNG" class="project" alt="As customer">
+                                <img src="images/Grocery3.PNG" class="project" alt="As manager">
+                                <img src="images/Grocery4.PNG" class="project" alt="As manager">
+                            </div>
 						</div>
 					</div>
 				</div>
@@ -94,42 +135,26 @@
 			<div class="container2">
 				<h1 class="title">Contact Me</h1>
 				<p class="text">
-					I currently attend Iowa State University, expecting to graduate after the spring semester
-					of 2023 with a double major in Management Information Systems and Business Analytics.
-					While I am a full-time student, I am also a software engineer working at TMC
-					Transportation in Ames, Iowa. Within the past 6 months I was on a team of 3 interns
-					developing a full-stack .NET web application that analyzed data for our cybersecurity
-					team. We created AWS Lambda functions, implemented web scraping, set up a Power BI
-					dashboard, and designed new tables in our database all while utilizing agile methodology
-					on an Azure DevOps board. I am looking for a software engineering position in the Chicago
-					area after my graduation in the spring of 2023.
+					You can reach me at tfelgs77@gmail.com or you can click right &#8594
+					<a class="here" href="mailto:tfelgs77@gmail.com">here</a> &#8592 to send me me an email! I will get back to
+					you as soon as i can!
 				</p>
-				<p class="text">
-					I currently attend Iowa State University, expecting to graduate after the spring semester
-					of 2023 with a double major in Management Information Systems and Business Analytics.
-					While I am a full-time student, I am also a software engineer working at TMC
-					Transportation in Ames, Iowa. Within the past 6 months I was on a team of 3 interns
-					developing a full-stack .NET web application that analyzed data for our cybersecurity
-					team. We created AWS Lambda functions, implemented web scraping, set up a Power BI
-					dashboard, and designed new tables in our database all while utilizing agile methodology
-					on an Azure DevOps board. I am looking for a software engineering position in the Chicago
-					area after my graduation in the spring of 2023.
-				</p>
-				<p class="text">
-					I currently attend Iowa State University, expecting to graduate after the spring semester
-					of 2023 with a double major in Management Information Systems and Business Analytics.
-					While I am a full-time student, I am also a software engineer working at TMC
-					Transportation in Ames, Iowa. Within the past 6 months I was on a team of 3 interns
-					developing a full-stack .NET web application that analyzed data for our cybersecurity
-					team. We created AWS Lambda functions, implemented web scraping, set up a Power BI
-					dashboard, and designed new tables in our database all while utilizing agile methodology
-					on an Azure DevOps board. I am looking for a software engineering position in the Chicago
-					area after my graduation in the spring of 2023.
-				</p>
+                <div class="media">
+                    <li><a href="https://github.com/tfelgs" class="github">
+                            <i-1 class="fa-brands fa-github fa-2x"></i-1>
+                        </a></li>
+                    <li><a href="https://linkedin.com/in/tyler-felgenhauer" class="linkedin btn btn-block">
+                            <i-2 class="fa-brands fa-linkedin-in fa-2x"></i-2>
+                        </a></li>
+                    <li><a href="mailto:tfelgs77@gmail.com" class="email btn btn-block">
+                            <i-2 class="fa-solid fa-envelope fa-2x">
+                                </i-3>
+                        </a></li>
+                </div>
 			</div>
 		</section>
 		<section class="footer-section" id="footer">
-			<div class="container2">
+			<div class="container">
 				<nav class="footer-nav">
 					<ul>
 						<li><a href="#home">Back To Top</a></li>
@@ -139,3 +164,42 @@
 		</section>
 	</body>
 </html>
+
+<script>
+    let toggle1 = button => {
+      let element = document.getElementById("aptoImages");
+      let hidden = element.getAttribute("hidden");
+  
+      if (hidden) {
+         element.removeAttribute("hidden");
+         button.innerText = "Show less";
+      } else {
+         element.setAttribute("hidden", "hidden");
+         button.innerText = "Click here to see more!";
+      }
+    }
+    let toggle2 = button => {
+      let element = document.getElementById("gmsImages");
+      let hidden = element.getAttribute("hidden");
+  
+      if (hidden) {
+         element.removeAttribute("hidden");
+         button.innerText = "Show less";
+      } else {
+         element.setAttribute("hidden", "hidden");
+         button.innerText = "Click here to see more!";
+      }
+    }
+    let toggle3 = button => {
+      let element = document.getElementById("moveImages");
+      let hidden = element.getAttribute("hidden");
+  
+      if (hidden) {
+         element.removeAttribute("hidden");
+         button.innerText = "Show less";
+      } else {
+         element.setAttribute("hidden", "hidden");
+         button.innerText = "Click here to see more!";
+      }
+    }
+  </script>
