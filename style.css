@@ -222,7 +222,6 @@ html {
 
 .buttons:active {
 	background-color: #3e8e41;
-	box-shadow: 0 5px #666;
 	transform: translateY(4px);
 }
 
@@ -272,7 +271,7 @@ i-3:hover {
 	font-size: 40px;
 }
 
-@media screen and (max-width: 900px) {
+@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
 	#logo {
 		font-size: 1.8vh;
 		margin-right: 50px;
