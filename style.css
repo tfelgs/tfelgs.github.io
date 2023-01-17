@@ -282,12 +282,18 @@ i-3:hover {
 		font-size: 1.8vh;
 		margin-right: 50px;
 	}
-	.title {
+	.title,
+	.title2 {
 		font-size: 5vh;
 	}
-	.text {
+	.title2 {
+		margin-right: 2vw;
+	}
+	.text,
+	.text2 {
 		font-size: 30px;
 		margin: 3vh;
+		line-height: 2em;
 	}
 	#proffesional,
 	#proffesional2 {
