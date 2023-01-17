@@ -15,3 +15,40 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+let toggle1 = (button) => {
+	let element = document.getElementById("aptoImages");
+	let hidden = element.getAttribute("hidden");
+
+	if (hidden) {
+		element.removeAttribute("hidden");
+		button.innerText = "Show less";
+	} else {
+		element.setAttribute("hidden", "hidden");
+		button.innerText = "Click here to see more!";
+	}
+};
+let toggle2 = (button) => {
+	let element = document.getElementById("gmsImages");
+	let hidden = element.getAttribute("hidden");
+
+	if (hidden) {
+		element.removeAttribute("hidden");
+		button.innerText = "Show less";
+	} else {
+		element.setAttribute("hidden", "hidden");
+		button.innerText = "Click here to see more!";
+	}
+};
+let toggle3 = (button) => {
+	let element = document.getElementById("moveImages");
+	let hidden = element.getAttribute("hidden");
+
+	if (hidden) {
+		element.removeAttribute("hidden");
+		button.innerText = "Show less";
+	} else {
+		element.setAttribute("hidden", "hidden");
+		button.innerText = "Click here to see more!";
+	}
+};
