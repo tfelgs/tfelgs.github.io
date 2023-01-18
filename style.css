@@ -295,6 +295,9 @@ i-3:hover {
 		margin: 3vh;
 		line-height: 2em;
 	}
+	.text2 {
+		float: none;
+	}
 	#proffesional,
 	#proffesional2 {
 		max-width: 65vw;
