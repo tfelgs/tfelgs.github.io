@@ -1,12 +1,11 @@
 body,
 html {
 	margin: 0;
-	font-family: arial;
+	font-family: cursive;
 	font-size: 20px;
 	scroll-behavior: smooth;
 	line-height: 1.5em;
 }
-
 #header {
 	background-color: rgba(0, 0, 0, 0.8);
 	padding: 20px 0;
@@ -16,63 +15,64 @@ html {
 	top: 0;
 	z-index: 100;
 }
-
 .container {
 	width: 86%;
 	margin: 0 auto;
 }
-
 .container2 {
 	width: 86%;
 	margin: 0 auto;
 	height: 100vh;
 }
-
 .title {
 	font-size: 3vw;
 	margin-bottom: 13vh;
 }
-
 .title2 {
 	font-size: 3vw;
 	margin-bottom: 13vh;
 	float: right;
 }
-
 #header .container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-
+.float-container {
+	padding: 0px;
+	vertical-align: middle;
+}
 #logo {
 	color: white;
 	font-size: 2vw;
 	animation: glow 100s infinite alternate;
+	float: left;
+	margin-right: 20px;
 }
-
+#jobTitle {
+	color: white;
+	font-size: 1vw;
+	margin: 0 auto;
+	float: left;
+}
 .main-nav ul {
 	padding: 0;
 	margin: 0;
 	list-style: none;
 }
-
 .main-nav ul li {
 	float: left;
 	margin-left: 35px;
 	font-family: 18px;
 }
-
 .main-nav ul li a {
 	text-decoration: none;
 	color: #fff;
 }
-
 .banner img {
 	max-width: 100%;
 	vertical-align: top;
 }
-
 .about-section,
 .projects-section,
 .contact-section {
@@ -82,15 +82,12 @@ html {
 	padding-top: 10vh;
 	display: inline-block;
 }
-
 .about-section {
 	background: rgba(194, 168, 147, 0.8);
 }
-
 #aboutTitle {
 	float: left;
 }
-
 #proffesional {
 	max-width: 18vw;
 	left: 40vw;
@@ -98,7 +95,6 @@ html {
 	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 	border-radius: 170px;
 }
-
 #proffesional2 {
 	max-width: 25vw;
 	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
@@ -106,7 +102,6 @@ html {
 	margin-right: 6vw;
 	border-radius: 40px;
 }
-
 .text {
 	margin: 6vh;
 	margin-top: 10vh;
@@ -115,7 +110,6 @@ html {
 	float: right;
 	border-radius: 25px;
 }
-
 .text::first-letter {
 	font-family: "EB Garamond", serif;
 	display: inline-table;
@@ -125,87 +119,101 @@ html {
 	font-size: 3.5em;
 	line-height: 1;
 }
-
 .text2 {
 	width: 70%;
 	margin-top: 10vh;
 	padding: 20px;
 	float: right;
 }
-
 .projects-section {
 	background: rgb(179, 160, 133);
 }
-
 .contact-section {
 	background: rgb(167, 151, 121);
 }
-
 .footer-section {
 	background: black;
 	display: flex;
 	align-items: center;
 }
-
 .footer-section .container {
 	text-align: center;
 }
-
 .footer-nav ul li a {
 	text-decoration: none;
 	color: #fff;
 }
-
 .main-nav ul li a:hover,
 .footer-nav ul li a:hover {
 	animation: glow 10s infinite;
 }
-
-* {
-	box-sizing: border-box;
-}
-
-.cardTitle {
-	font-size: 40px;
-	margin: 30px;
-	line-height: 40px;
-}
-
-.cardText {
-	font-size: 20px;
-}
-
-.cardTools {
-	font-size: 17px;
-	text-align: left;
-}
-
-.column {
-	float: left;
-	width: 50%;
-	padding: 0 10px;
-}
-
-.row {
-	margin: 0 -5px;
-}
-
-.row:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
 .card {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	padding: 16px;
-	text-align: center;
-	background-color: #daadad;
 	display: inline-block;
-	margin-bottom: 30px;
+	height: 500px;
+	width: 500px;
+	background-color: #17141d;
 	border-radius: 10px;
+	box-shadow: -1rem 0 3rem #000;
+	transition: 0.4s ease-out;
+	position: relative;
+	left: 22vw;
+	padding-left: 20px;
+	padding-right: 20px;
 }
-
+.card:not(:first-child) {
+	margin-left: -17vw;
+}
+.card:hover {
+	transform: translateY(-40px);
+	transition: 0.4s ease-out;
+}
+.card:hover ~ .card {
+	position: relative;
+	left: 40vw;
+	transition: 0.4s ease-out;
+}
+.cardTitle {
+	color: white;
+	font-weight: 300;
+	left: 20px;
+	top: 15px;
+	margin-bottom: 60px;
+}
+.cardText {
+	color: white;
+	font-weight: 300;
+}
+.bar {
+	position: absolute;
+	top: 80px;
+	left: 20px;
+	height: 5px;
+	width: 150px;
+}
+.emptybar {
+	background-color: #2e3033;
+	width: 100%;
+	height: 100%;
+}
+.filledbar {
+	position: absolute;
+	top: 0px;
+	z-index: 3;
+	width: 0px;
+	height: 100%;
+	background: rgb(0, 154, 217);
+	background: linear-gradient(
+		90deg,
+		rgba(0, 154, 217, 1) 0%,
+		rgba(217, 147, 0, 1) 65%,
+		rgba(255, 186, 0, 1) 100%
+	);
+	transition: 0.6s ease-out;
+}
+.card:hover .filledbar {
+	width: 150px;
+	transition: 0.4s ease-out;
+}
 .buttons {
 	display: inline-block;
 	padding: 15px 25px;
@@ -219,56 +227,46 @@ html {
 	border: none;
 	border-radius: 15px;
 }
-
 .buttons:hover {
 	background-color: #4caf50;
 	color: white;
 	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
-
 .buttons:active {
 	background-color: #3e8e41;
 	transform: translateY(4px);
 }
-
 .seeMore {
 	text-decoration: none;
 	color: rgb(255, 255, 255);
 }
-
 .project {
 	max-width: 95%;
 	margin: 20px;
 	border: solid 1px black;
 }
-
 .media {
 	margin-top: 25vh;
 	margin-bottom: 3vh;
 	text-align: center;
 }
-
 .media > li {
 	display: inline;
 	margin: 5vw;
 }
-
 .media > li > a {
 	text-decoration: none;
 }
-
 i-1,
 i-2,
 i-3 {
 	color: black;
 	animation: 1s ease-out 0s 1 animate-drop;
 }
-
 .here {
 	color: black;
 	text-decoration: none;
 }
-
 .here:hover,
 i-1:hover,
 i-2:hover,
@@ -276,7 +274,6 @@ i-3:hover {
 	color: goldenrod;
 	font-size: 40px;
 }
-
 @media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
 	#logo {
 		font-size: 1.8vh;
@@ -314,19 +311,16 @@ i-3:hover {
 		float: none;
 	}
 }
-
 .reveal {
 	position: relative;
 	transform: translateY(150px);
 	opacity: 0;
 	transition: 1s all ease;
 }
-
 .reveal.active {
 	transform: translateY(0);
 	opacity: 1;
 }
-
 @media screen and (max-width: 1000px) {
 	.container2 {
 		height: 100%;
