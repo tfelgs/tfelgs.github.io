@@ -24,9 +24,18 @@ html {
 	margin: 0 auto;
 	height: 100vh;
 }
+.container3 {
+	width: 86%;
+	margin: 0 auto;
+	background: rgba(224, 202, 183, 0.8);
+	padding: 30px;
+	box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
 .title {
 	font-size: 3vw;
 	margin-bottom: 13vh;
+	color: white;
 }
 .title2 {
 	font-size: 3vw;
@@ -78,12 +87,8 @@ html {
 .contact-section {
 	height: 100%;
 	width: 100%;
-	align-items: center;
 	padding-top: 10vh;
 	display: inline-block;
-}
-.about-section {
-	background: rgba(194, 168, 147, 0.8);
 }
 #aboutTitle {
 	float: left;
@@ -108,7 +113,8 @@ html {
 	background-color: rgb(205, 252, 240);
 	padding: 20px;
 	float: right;
-	border-radius: 25px;
+	box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 }
 .text::first-letter {
 	font-family: "Rowdies", cursive;
@@ -122,18 +128,21 @@ html {
 .text2 {
 	width: 100%;
 	margin-top: 10vh;
-	padding: 20px;
+	padding-right: 20px;
+}
+.about-section {
+	background: rgb(83, 80, 76);
 }
 .projects-section {
-	background: rgb(179, 160, 133);
+	background: rgba(10, 10, 9, 0.8);
 }
 .contact-section {
-	background: rgb(167, 151, 121);
+	background: rgb(41, 39, 37);
+	height: 100vh;
 }
 .footer-section {
 	background: black;
 	display: flex;
-	align-items: center;
 }
 .footer-section .container {
 	text-align: center;
@@ -246,6 +255,7 @@ html {
 	background-color: #3e8e41;
 	transform: translateY(4px);
 }
+
 .project {
 	max-width: 95%;
 	margin: 20px;
@@ -253,12 +263,13 @@ html {
 }
 .media {
 	margin-top: 25vh;
-	margin-bottom: 3vh;
 	text-align: center;
+	margin-bottom: 20px;
 }
 .media > li {
 	display: inline;
-	margin: 5vw;
+	margin-right: 5vw;
+	margin-left: 5vw;
 }
 .media > li > a {
 	text-decoration: none;
@@ -272,13 +283,6 @@ i-3 {
 .here {
 	color: black;
 	text-decoration: none;
-}
-.here:hover,
-i-1:hover,
-i-2:hover,
-i-3:hover {
-	color: goldenrod;
-	font-size: 40px;
 }
 @media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
 	#logo {
@@ -309,12 +313,6 @@ i-3:hover {
 	}
 	#proffesional2 {
 		margin-bottom: 10vh;
-	}
-	.column {
-		width: 100%;
-		margin-bottom: 20px;
-		display: block;
-		float: none;
 	}
 }
 .reveal {
