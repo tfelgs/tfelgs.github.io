@@ -1,7 +1,7 @@
 body,
 html {
 	margin: 0;
-	font-family: cursive;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 20px;
 	scroll-behavior: smooth;
 	line-height: 1.5em;
@@ -149,8 +149,8 @@ html {
 }
 .card {
 	display: inline-block;
-	height: 500px;
-	width: 500px;
+	height: fit-content;
+	width: 550px;
 	background-color: #17141d;
 	border-radius: 10px;
 	box-shadow: -1rem 0 3rem #000;
@@ -161,7 +161,8 @@ html {
 	padding-right: 20px;
 }
 .card:not(:first-child) {
-	margin-left: -17vw;
+	margin-left: -13vw;
+	float: left;
 }
 .card:hover {
 	transform: translateY(-40px);
@@ -169,10 +170,11 @@ html {
 }
 .card:hover ~ .card {
 	position: relative;
-	left: 40vw;
+	left: 35vw;
 	transition: 0.4s ease-out;
 }
 .cardTitle {
+	font-size: 40px;
 	color: white;
 	font-weight: 300;
 	left: 20px;
@@ -185,10 +187,10 @@ html {
 }
 .bar {
 	position: absolute;
-	top: 80px;
+	top: 90px;
 	left: 20px;
 	height: 5px;
-	width: 150px;
+	width: 200px;
 }
 .emptybar {
 	background-color: #2e3033;
@@ -211,15 +213,14 @@ html {
 	transition: 0.6s ease-out;
 }
 .card:hover .filledbar {
-	width: 150px;
+	width: 200px;
 	transition: 0.4s ease-out;
 }
 .buttons {
-	display: inline-block;
 	padding: 15px 25px;
+	margin: 25px;
 	font-size: 17px;
 	cursor: pointer;
-	text-align: center;
 	text-decoration: none;
 	outline: none;
 	color: #fff;
@@ -235,10 +236,6 @@ html {
 .buttons:active {
 	background-color: #3e8e41;
 	transform: translateY(4px);
-}
-.seeMore {
-	text-decoration: none;
-	color: rgb(255, 255, 255);
 }
 .project {
 	max-width: 95%;

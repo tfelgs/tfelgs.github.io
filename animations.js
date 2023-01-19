@@ -25,7 +25,7 @@ let toggle1 = (button) => {
 		button.innerText = "Show less";
 	} else {
 		element.setAttribute("hidden", "hidden");
-		button.innerText = "Click here to see more!";
+		button.innerText = "Learn More";
 	}
 };
 let toggle2 = (button) => {
@@ -37,7 +37,7 @@ let toggle2 = (button) => {
 		button.innerText = "Show less";
 	} else {
 		element.setAttribute("hidden", "hidden");
-		button.innerText = "Click here to see more!";
+		button.innerText = "Learn More";
 	}
 };
 let toggle3 = (button) => {
@@ -49,6 +49,6 @@ let toggle3 = (button) => {
 		button.innerText = "Show less";
 	} else {
 		element.setAttribute("hidden", "hidden");
-		button.innerText = "Click here to see more!";
+		button.innerText = "Learn More";
 	}
 };
