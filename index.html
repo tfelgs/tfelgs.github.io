@@ -5,6 +5,9 @@
         <link rel="stylesheet" type="text/css" href="fontawesome-free-6.1.1-web/css/all.css">
 		<link rel="stylesheet" type="text/css" href="style.css" />
         <script src="animations.js"></script>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@200&display=swap');
+		</style>			
 	</head>
 	<body>
 		<header id="header">
@@ -23,9 +26,13 @@
 				</nav>
 			</div>
 		</header>
+
+
 		<section class="banner" id="home">
 			<img src="images\Iowa State Background.jpg" />
 		</section>
+
+
 		<section class="about-section" id="about">
 			<div class="container2 reveal">
 				<div>
@@ -45,11 +52,14 @@
 				</p>
 			</div>
 		</section>
+
+
 		<section class="projects-section" id="projects">
 			<div class="container2 reveal">
 				<h1 class="title">My Projects</h1>
 				<div class="card" id="card1">
 					<h2 class="cardTitle">Apto</h2>
+					<img class="cardIcon" src="images/Apto.ico">
 					<div class="bar">
 					  <div class="emptybar"></div>
 					  <div class="filledbar"></div>
@@ -70,13 +80,14 @@
 							allow users to become more aware of what they are taking and the overall effect it
 							has on their actual performance or health.
 						</div>
-						<video width="320" height="240" controls>
+						<video class="cardVideo" width="320" height="240" controls>
 							<source src="images/Apto.mov" type="video/mp4">
-						  </video>
+						</video>
 					</div>
 				</div>
 				<div class="card" id="card2">
 					<h2 class="cardTitle">The Move</h2>
+					<img class="cardIcon" src="images/The-Move-Logo.png">
 					<div class="bar">
 					  <div class="emptybar"></div>
 					  <div class="filledbar"></div>
@@ -84,7 +95,7 @@
 					<div class="cardText">
 						• Led and taught a group of students to develop a web application using ReactJS. <br /> <br />
 						• Displayed information for bars in the surrounding area and their corresponding deals. <br /> <br />
-						• Used Google Maps API and Semantic UI React.
+						• Used Google Maps API and Semantic UI React. <br /> <br />
 					</div>
 					<button class="buttons" onclick="toggle3(this)">Learn more</button>
 					<div hidden="hidden" class="projectImages" id="moveImages">
@@ -95,11 +106,14 @@
 							nearby places to eat or drink with the Google Maps tab, check which deals are going on according to 
 							certain days, and also send emails to employees to get their bar sponsored on this website. 
 						</div>
-						<img src="images/Apto1.PNG" class="project" alt="Home Page 1/2">
+						<video class="cardVideo" width="320" height="240" controls>
+							<source src="images/TheMove.mov" type="video/mp4">
+						</video>					
 					</div>
 				</div>
 				<div class="card" id="card3">
 					<h2 class="cardTitle">Grocery Management System</h2>
+					<img class="cardIcon" src="images/Python.png">
 					<div class="bar">
 					  <div class="emptybar"></div>
 					  <div class="filledbar"></div>
@@ -119,11 +133,15 @@
 							record of sales for a certain product. After completing a sale product inventory can
 							be queried to show the updated amount along with many other functions.
 						</div>
-						<img src="images/Grocery1.PNG" class="project" alt="As customer">
+						<video class="cardVideo" width="320" height="240" controls>
+							<source src="images/GMS.mov" type="video/mp4">
+						</video>					
 					</div>
 				</div>
 			</div>
 		</section>
+
+
 		<section class="contact-section" id="contact">
 			<div class="container2 reveal">
                 <div class="row">
@@ -132,7 +150,7 @@
                         <p class="text2">
                             You can reach me at tfelgs77@gmail.com or you can click right &#8594
                             <a class="here" href="mailto:tfelgs77@gmail.com">here</a> &#8592 to send me me an email! I will get back to
-                            you as soon as i can!
+                            you as soon as I can!
                         </p>
                 </div>
                 <div class="media">
@@ -149,6 +167,8 @@
                 </div>
 			</div>
 		</section>
+
+
 		<section class="footer-section" id="footer">
 			<div class="container">
 				<nav class="footer-nav">
