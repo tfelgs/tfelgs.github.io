@@ -6,29 +6,44 @@
 		<link rel="stylesheet" type="text/css" href="style.css" />
         <script src="animations.js"></script>			
 	</head>
-	<body>
+	<body class="scrollbar" id="scrollbar1">
+
 		<header id="header">
 			<div class="container">
 				<div class="float-container">
 					<hl id="logo">Tyler Felgenhauer</hl>
 					<h3 id="jobTitle">| &nbsp Software Engineer</h2>
-				  </div>
-				<nav class="main-nav">
-					<ul>
-						<li><a href="#home">Home</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#projects">Projects</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
+					</div>
+					<nav class="main-nav">
+						<ul>
+							<li><a href="#home">Home</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#resume">Resume</a></li>
+							<li><a href="#projects">Projects</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
 
-
+		<button class="back-to-top hidden"><svg
+			xmlns="http://www.w3.org/2000/svg"
+			class="back-to-top-icon"
+			fill="none"
+			viewBox="0 0 24 24"
+			stroke="currentColor"
+		  >
+			<path
+			  stroke-linecap="round"
+			  stroke-linejoin="round"
+			  stroke-width="2"
+			  d="M7 11l5-5m0 0l5 5m-5-5v12"
+			/>
+		  </svg></button>
+		
 		<section class="banner" id="home">
 			<img src="images\Iowa State Background.jpg" />
 		</section>
-
 
 		<section class="about-section" id="about">
 			<div class="container2 reveal">
@@ -50,10 +65,67 @@
 			</div>
 		</section>
 
+		<section class="resume-section" id="resume">
+			<div class="container2 reveal">
+				<div class="resume-chunk" id="experience">
+					<h1 class="resume-title reveal">Experience</h1>
+					<h3 class="resume-subtitle reveal">TMC Transportation / Ames, IA &nbsp </h3>
+					<h4 class="reveal" style="margin-left: 40px;">Software Engineer Intern &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp May 2022 - Present</h3>
+					<p class="resume-text reveal">
+						• Developed an in-house web application for the cybersecurity team to analyze various security
+						metrics using the ASP.NET MVC Core stack and JavaScript.<br/>
+						• Created AWS Lambda functions that pulls data into a database through APIs and web scraping.<br/>
+						• Created interactive dashboards and visuals using DAX queries and ETL processes in Power BI.<br/>
+						• Followed the agile methodology on an Azure DevOps board using Scrum.<br/>
+						• Remodeled the web application with AngularJS frontend.<br/>
+					</p>
+					<h3 class="resume-subtitle reveal">ITS Endpoint Technologies / Ames, IA </h3>
+					<h4 class="reveal" style="margin-left: 40px;">Senior On-Site Technician &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp May 2021 - May 2022</h3>
+					<p class="resume-text reveal">
+						• Led teams on implementing more efficient workflows for our receiving, imaging, and re-imaging
+						departments that lead to an increase in efficiency by more than 50%.<br/>
+						• Familiarized new techs with software such as MECM, Active Directory, and Bomgar.<br/>
+						• Provided quality services for the administrative staff of Iowa State University using ServiceNow.<br/>
+						• Diagnosed problems on devices such as printers, laptops, and desktop computers.<br/>
+					</p>
+				</div>
+				<div class="resume-chunk" id="education">
+					<h1 class="resume-title reveal">Education</h1>
+					<h3 class="resume-subtitle reveal" >Iowa State University / Ames, IA &nbsp &nbsp &nbsp &nbsp Spring 2023 </h3>
+					<p class="resume-text reveal">
+						B.S in Management Information Systems and Business Analytics <br />
+						Dean’s list – Fall 2020, Spring 2021<br />
+						Member of the ISU ISBA Club<br />
+					</p>
+					<hr class="reveal">
+				</div>
+				<div class="resume-chunk" id="skills">
+					<h1 class="resume-title reveal">Skills</h1>
+					<p class="resume-text reveal">
+						<strong>Programming languages:</strong> Java, Python, C#, HTML5, CSS3, Javascript, DAX<br />
+						<strong>Frameworks:</strong> ReactJS, AngularJS, Node JS, Express.js, Selenium, Semantic UI React<br />
+						<strong>Database Management:</strong> SQL, NoSQL, MongoDB, MySQL<br />
+						<strong>Software:</strong> Tableau, Power BI, SMSS, ServiceNow, Matlab<br />
+					</p>
+					<hr class="reveal">
+				</div>
+				<div class="resume-chunk">
+				<h1 class="resume-title reveal">Projects</h1>
+					<p class="resume-text reveal" id="resume-projects">
+						Keep scrolling to see my projects! <br /> 
+						&darr; &nbsp &darr; &nbsp &darr; &nbsp &darr; &nbsp &darr; &nbsp &darr;
+						&nbsp &darr; &nbsp &darr; &nbsp &darr; &nbsp &darr; &nbsp &darr;
+					</p>
+				</div>
+			</div>
+			<div class="resume-box reveal">
+				<a class="resumePDF" href="/images/Resume.pdf">Click here to check out my actual resume!</a>
+			</div>
+		</section>
 
 		<section class="projects-section" id="projects">
-			<div class="container2 reveal">
-				<h1 class="title reveal">My Projects</h1>
+			<div class="container reveal">
+				<h1 class="title reveal">Projects</h1>
 				<div class="card" id="card1">
 					<h2 class="cardTitle">Apto</h2>
 					<img class="cardIcon" src="images/Apto.ico">
@@ -138,39 +210,58 @@
 			</div>
 		</section>
 
-
 		<section class="contact-section" id="contact">
 			<div class="container3 reveal">
+				<div>
 					<img src="images\GOLD2143.JPG" id="proffesional2" />
 					<h1 class="title2 reveal">Contact Me</h1>
-					<p class="text2 ">
-						You can reach me at tfelgs77@gmail.com or you can click right &#8594
-						<a class="here" href="mailto:tfelgs77@gmail.com">here</a> &#8592 to send me me an email! I will get back to
-						you as soon as I can!
-					</p>
-                <div class="media ">
+				</div>
+				</div class=contact-row>
+					<a class="flying" href="mailto:tfelgs77@gmail.com">
+						<div class="paperplane reveal">
+							<div class="plane">
+								<div class="wingRight"></div>
+								<div class="wingLeft"></div>
+								<div class="bottom"></div>
+								<div class="top"></div>
+								<div class="middle"></div>
+							</div>
+							Send me an email
+					</a>
+				</div>
+                <div class="media">
                     <li ><a href="https://github.com/tfelgs">
                             <i-1 class="fa-brands fa-github fa-2x"></i-1>
                         </a></li>
                     <li><a href="https://linkedin.com/in/tyler-felgenhauer" >
                             <i-2 class="fa-brands fa-linkedin-in fa-2x"></i-2>
                         </a></li>
-                    <li><a href="mailto:tfelgs77@gmail.com" >
-                            <i-3 class="fa-solid fa-envelope fa-2x"></i-3>
-                        </a></li>
                 </div>
 			</div>
 		</section>
-
-
-		<section class="footer-section" id="footer">
-			<div class="container">
-				<nav class="footer-nav">
-					<ul>
-						<li><a href="#home">Back To Top</a></li>
-					</ul>
-				</nav>
-			</div>
-		</section>
 	</body>
+
+	<script>
+		const showOnPx = 100;
+		const backToTopButton = document.querySelector(".back-to-top")
+
+		const scrollContainer = () => {
+			return document.documentElement || document.body;
+		};
+
+		document.addEventListener("scroll", () => {
+			if (scrollContainer().scrollTop > showOnPx) {
+				backToTopButton.classList.remove("hidden")
+			} else {
+				backToTopButton.classList.add("hidden")
+			}
+		})
+		const goToTop = () => {
+  			document.body.scrollIntoView({    
+				behavior: "smooth",
+			});
+		};
+		backToTopButton.addEventListener("click", goToTop)
+	</script>
+
 </html>

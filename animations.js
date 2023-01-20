@@ -1,10 +1,9 @@
-function reveal() {
+window.addEventListener("scroll", () => {
 	var reveals = document.querySelectorAll(".reveal");
-
 	for (var i = 0; i < reveals.length; i++) {
 		var windowHeight = window.innerHeight;
 		var elementTop = reveals[i].getBoundingClientRect().top;
-		var elementVisible = 150;
+		var elementVisible = 80;
 
 		if (elementTop < windowHeight - elementVisible) {
 			reveals[i].classList.add("active");
@@ -12,9 +11,7 @@ function reveal() {
 			reveals[i].classList.remove("active");
 		}
 	}
-}
-
-window.addEventListener("scroll", reveal);
+});
 
 let toggle1 = (button) => {
 	let element = document.getElementById("aptoImages");
