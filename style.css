@@ -409,7 +409,7 @@ i-3 {
 .plane {
 	position: absolute;
 	left: 20px;
-	top: 29px;
+	top: 42px;
 }
 .flying:hover > .plane {
 	animation: move 3s linear infinite;

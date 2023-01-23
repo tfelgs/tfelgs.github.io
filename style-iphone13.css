@@ -1,4 +1,4 @@
-@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+@media only screen and (device-width<= 390px) and (device-height <= 844px) and (-webkit-device-pixel-ratio: 3) {
 	* {
 		font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 	}
@@ -88,6 +88,10 @@
 	.buttons {
 		font-size: 23px;
 	}
+	.back-to-top-icon {
+		width: 4rem;
+		height: 4rem;
+	}
 	.contact-section {
 		height: 100vh;
 	}
@@ -119,17 +123,17 @@
 		margin-left: 30px;
 	}
 	.resume-title {
-		font-size: 8vw;
+		font-size: 80px;
 		margin-bottom: 60px;
 	}
 	.resume-subtitle {
-		font-size: 2vw;
+		font-size: 35px;
 	}
 	.resume-jobTitle {
-		font-size: 1.3vw;
+		font-size: 13.5px;
 	}
 	.resume-text {
-		font-size: 1.1vw;
+		font-size: 11px;
 		margin-left: 40px;
 	}
 	#resume-projects {
@@ -148,7 +152,7 @@
 	}
 
 	/* Cool navigation for iphones */
-	.nav-container1 {
+	#header {
 		display: none;
 	}
 	a {
