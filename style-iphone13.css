@@ -21,7 +21,7 @@
 	}
 	.logo {
 		position: fixed;
-		top: 3.3%;
+		top: 4%;
 		left: 30%;
 		margin: 0 auto;
 		margin-right: 50px;
@@ -29,19 +29,17 @@
 	}
 	.jobTitle {
 		position: fixed;
-		top: 5.5%;
+		top: 6%;
 		left: 61%;
 		font-size: 30px;
 		margin: 0 auto;
 		margin-right: 6rem;
 	}
-	.title,
-	.title2 {
-		font-size: 4vh;
+	.title {
+		font-size: 80px;
 	}
 	.title2 {
-		margin-right: 2vw;
-		margin-bottom: 8vh;
+		display: none;
 	}
 	.text,
 	.text2 {
@@ -58,12 +56,12 @@
 	}
 	#proffesional {
 		margin-bottom: 10rem;
-		max-width: 45vw;
+		max-width: 450px;
 	}
 	#proffesional2 {
-		margin-bottom: 10px;
-		margin-top: 5vh;
-		max-width: 65vw;
+		margin-bottom: 10rem;
+		margin-top: 50px;
+		max-width: 28rem;
 		margin-left: 90px;
 	}
 	.bar,
@@ -72,7 +70,7 @@
 		display: none;
 	}
 	.cardIcon {
-		height: 8.5vw;
+		height: 90px;
 	}
 	.cardTitle {
 		font-size: 55px;
@@ -92,7 +90,7 @@
 		height: 100vh;
 	}
 	.banner img {
-		height: 30vh;
+		width: 100%;
 		vertical-align: top;
 	}
 	.card {
@@ -105,7 +103,7 @@
 		box-shadow: -1rem 0 3rem #000;
 		transition: 0.4s ease-out;
 		position: relative;
-		left: 27vw;
+		left: 270px;
 		padding-left: 20px;
 		padding-right: 20px;
 	}

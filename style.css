@@ -59,11 +59,16 @@ html {
 	right: 230px;
 }
 .flying {
-	text-decoration: none;
 	color: white;
-	position: absolute;
-	border-radius: 50%;
 	cursor: pointer;
+	text-decoration: none;
+	position: absolute;
+}
+.paperplane {
+	border-radius: 50%;
+	background-color: white;
+	left: 20px;
+	top: 62px;
 }
 #header .container {
 	display: flex;
@@ -410,7 +415,7 @@ i-3 {
 .plane {
 	position: absolute;
 	left: 20px;
-	top: 42px;
+	bottom: 0;
 }
 .flying:hover > .plane {
 	animation: move 3s linear infinite;
