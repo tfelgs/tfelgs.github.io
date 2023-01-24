@@ -27,7 +27,6 @@ html {
 	padding: 20px 0;
 	width: 100%;
 	position: fixed;
-	left: 0;
 	top: 0;
 	z-index: 10;
 }
@@ -75,14 +74,14 @@ html {
 	padding: 0px;
 	vertical-align: middle;
 }
-#logo {
+.logo {
 	color: white;
 	font-size: 2vw;
 	animation: glow 100s infinite alternate;
 	float: left;
 	margin-right: 20px;
 }
-#jobTitle {
+.jobTitle {
 	color: white;
 	font-size: 1vw;
 	margin: 0 auto;
@@ -188,15 +187,6 @@ html {
 .card:not(:first-child) {
 	margin-left: -13vw;
 	float: left;
-}
-.card:hover {
-	transform: translateY(-40px);
-	transition: 0.4s ease-out;
-}
-.card:hover ~ .card {
-	position: relative;
-	left: 36vw;
-	transition: 0.4s ease-out;
 }
 .cardTitle {
 	font-size: 40px;
@@ -346,16 +336,6 @@ i-3 {
 	height: 2rem;
 	color: #7ac9f9;
 }
-.reveal {
-	position: relative;
-	transform: translateY(150px);
-	opacity: 0;
-	transition: 1s all ease;
-}
-.reveal.active {
-	transform: translateY(0);
-	opacity: 1;
-}
 @media screen and (max-width: 1000px) {
 	.container2 {
 		height: 100%;
@@ -364,6 +344,27 @@ i-3 {
 @media screen and (device-width > 500px) {
 	#header2 {
 		display: none;
+	}
+	.reveal,
+	.reveal2 {
+		position: relative;
+		transform: translateY(150px);
+		opacity: 0;
+		transition: 1s all ease;
+	}
+	.reveal.active,
+	.reveal2.active {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	.card:hover {
+		transform: translateY(-40px);
+		transition: 0.4s ease-out;
+	}
+	.card:hover ~ .card {
+		position: relative;
+		left: 36vw;
+		transition: 0.4s ease-out;
 	}
 }
 @keyframes glow {

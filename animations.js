@@ -12,6 +12,20 @@ window.addEventListener("scroll", () => {
 		}
 	}
 });
+window.addEventListener("scroll", () => {
+	var reveals2 = document.querySelectorAll(".reveal2");
+	for (var i = 0; i < reveals2.length; i++) {
+		var windowHeight = window.innerHeight;
+		var elementTop = reveals2[i].getBoundingClientRect().top;
+		var elementVisible = 80;
+
+		if (elementTop < windowHeight - elementVisible) {
+			reveals2[i].classList.add("active");
+		} else {
+			reveals2[i].classList.remove("active");
+		}
+	}
+});
 
 let toggle1 = (button) => {
 	let element = document.getElementById("aptoImages");
