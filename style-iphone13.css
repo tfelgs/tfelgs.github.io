@@ -1,6 +1,39 @@
 @media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
-	* {
+	#scrollbar1::-webkit-scrollbar {
+		width: 20px;
+	}
+	#scrollbar1::-webkit-scrollbar-track {
+		background: rgba(31, 31, 29, 0.8);
+	}
+	#scrollbar1::-webkit-scrollbar-thumb {
+		border-radius: 8px;
+		border: 3px solid transparent;
+		background-clip: content-box;
+		background-color: #7ac9f9;
+	}
+	body,
+	html {
+		margin: 0;
 		font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+		color: white;
+		font-size: 20px;
+		scroll-behavior: smooth;
+		line-height: 1.5em;
+		background: rgba(31, 31, 29, 0.8);
+	}
+	#header2,
+	#header {
+		background-color: rgba(0, 0, 0, 0.8);
+		padding: 20px 0;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		z-index: 10;
+	}
+	.nav-container1,
+	.container {
+		width: 86%;
+		margin: 0 auto;
 	}
 	.reveal2 {
 		position: relative;
@@ -14,26 +47,87 @@
 	}
 	.container2 {
 		margin: 50px;
+		width: 86%;
+		margin: 0 auto;
+		height: 100vh;
+	}
+	.container3 {
+		width: 86%;
+		margin: 0;
+		padding: 30px;
+		display: inline-block;
+	}
+	.flying {
+		color: white;
+		cursor: pointer;
+		text-decoration: none;
+		position: absolute;
+	}
+	.paperplane {
+		border-radius: 50%;
+		background-color: white;
+	}
+	.plane {
+		position: absolute;
+		top: 50px;
+	}
+	#header .container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.float-container {
+		padding: 0px;
+		vertical-align: middle;
+	}
+	#aboutTitle {
+		float: left;
 	}
 	.about-section {
 		padding-top: 0;
 		padding-bottom: 10px;
 	}
 	.logo {
+		color: white;
 		position: fixed;
 		top: 4%;
 		left: 30%;
 		margin: 0 auto;
 		margin-right: 50px;
 		font-size: 50px;
+		animation: glow 100s infinite alternate;
+		float: left;
 	}
 	.jobTitle {
+		color: white;
 		position: fixed;
 		top: 6%;
 		left: 61%;
 		font-size: 30px;
 		margin: 0 auto;
 		margin-right: 6rem;
+		float: left;
+	}
+	.resume-section,
+	.about-section,
+	.projects-section,
+	.contact-section {
+		display: inline-block;
+		height: 100%;
+		width: 100%;
+		padding-top: 100px;
+		margin: 0 auto;
+		margin-bottom: 10rem;
+	}
+	.text {
+		color: black;
+		margin: 60px;
+		margin-top: 100px;
+		padding: 20px;
+		background-color: rgb(205, 252, 240);
+		float: right;
+		box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
+		border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 	}
 	.title {
 		font-size: 80px;
@@ -53,45 +147,37 @@
 	.text::first-letter {
 		font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 		margin: -0.01em 0.2em -0.25em 0;
+		display: inline-table;
+		float: left;
+		font-size: 3.5em;
+		line-height: 1;
 	}
 	#proffesional {
 		margin-bottom: 10rem;
 		max-width: 450px;
+		left: 400px;
+		margin-left: 300px;
+		box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+		border-radius: 170px;
 	}
 	#proffesional2 {
 		margin-bottom: 10rem;
 		margin-top: 50px;
 		max-width: 28rem;
 		margin-left: 90px;
+		box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
+		border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+		float: left;
+	}
+	.text2 {
+		width: 100%;
+		text-align: center;
+		padding: 20px;
 	}
 	.bar,
 	.emptybar,
 	.filledbar {
 		display: none;
-	}
-	.cardIcon {
-		height: 90px;
-	}
-	.cardTitle {
-		font-size: 55px;
-		line-height: 1;
-	}
-	.cardText {
-		font-size: 26px;
-	}
-	.buttons {
-		font-size: 23px;
-	}
-	.back-to-top-icon {
-		width: 4rem;
-		height: 4rem;
-	}
-	.contact-section {
-		height: 100vh;
-	}
-	.banner img {
-		width: 100%;
-		vertical-align: top;
 	}
 	.card {
 		margin-bottom: 30px;
@@ -107,8 +193,95 @@
 		padding-left: 20px;
 		padding-right: 20px;
 	}
+	.card:not(:first-child) {
+		margin-left: -130px;
+		float: left;
+	}
+	.card:hover {
+		transform: translateY(-40px);
+		transition: 0.4s ease-out;
+	}
 	.card:hover ~ .card {
 		left: none;
+		position: relative;
+		transition: 0.4s ease-out;
+	}
+	.cardTitle {
+		font-size: 55px;
+		line-height: 1;
+		color: white;
+		font-weight: 300;
+		left: 20px;
+		top: 15px;
+		margin-bottom: 60px;
+	}
+	.cardIcon {
+		height: 90px;
+		margin: 6px;
+		margin-left: 35px;
+	}
+	.cardText {
+		font-size: 26px;
+		color: white;
+		font-weight: 300;
+		margin: 30px;
+	}
+	.cardVideo {
+		width: 550px;
+		margin-bottom: 20px;
+	}
+	.buttons {
+		font-size: 23px;
+		padding: 15px 25px;
+		margin: 25px;
+		cursor: pointer;
+		text-decoration: none;
+		outline: none;
+		color: #fff;
+		background-color: #4caf50;
+		border: none;
+		border-radius: 15px;
+	}
+	.buttons:hover {
+		background-color: #4caf50;
+		color: white;
+		box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+	}
+	.buttons:active {
+		background-color: #3e8e41;
+		transform: translateY(4px);
+	}
+	.back-to-top {
+		position: fixed;
+		right: 2rem;
+		bottom: 2rem;
+		border-radius: 100%;
+		background: #141c38;
+		padding: 0.5rem;
+		border: none;
+		cursor: pointer;
+		opacity: 100%;
+		transition: opacity 0.5s;
+	}
+	.back-to-top:hover {
+		opacity: 60%;
+	}
+	.hidden {
+		opacity: 0%;
+	}
+	.back-to-top-icon {
+		width: 4rem;
+		height: 4rem;
+		color: #7ac9f9;
+	}
+	.contact-section {
+		padding-top: 0;
+		align-items: center;
+		text-align: center;
+	}
+	.banner img {
+		width: 100%;
+		vertical-align: top;
 	}
 	.resume-chunk {
 		float: left;
@@ -143,6 +316,26 @@
 		color: #7ac9f9;
 		text-decoration: none;
 		text-shadow: 1px 1px 2px black;
+	}
+	.contact-row {
+		width: 100%;
+	}
+	.media {
+		margin-top: 13rem;
+		text-align: center;
+	}
+	.media > li {
+		display: inline;
+		margin-right: 50px;
+		margin-left: 50px;
+	}
+	.media > li > a {
+		text-decoration: none;
+	}
+	i-1,
+	i-2,
+	i-3 {
+		color: white;
 	}
 
 	/* Cool navigation for iphones */
