@@ -294,23 +294,26 @@
 		margin-bottom: 60px;
 	}
 	.resume-subtitle {
-		font-size: 35px;
+		font-size: 40px;
 	}
 	.resume-jobTitle {
-		font-size: 13.5px;
+		font-size: 26px;
+		margin-left: 30px;
 	}
 	.resume-text {
-		font-size: 11px;
-		margin-left: 40px;
+		font-size: 20px;
+		margin-left: 30px;
 	}
 	#resume-projects {
 		text-align: center;
+		font-size: 30px;
 	}
 	.resume-box {
 		width: 100%;
 		text-align: center;
 		float: left;
 		margin-top: 40px;
+		font-size: 30px;
 	}
 	.resumePDF {
 		color: #7ac9f9;
