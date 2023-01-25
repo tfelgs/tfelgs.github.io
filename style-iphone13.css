@@ -295,14 +295,16 @@
 	}
 	.resume-subtitle {
 		font-size: 40px;
+		line-height: 1.5;
 	}
 	.resume-jobTitle {
-		font-size: 26px;
+		font-size: 30px;
 		margin-left: 30px;
 	}
 	.resume-text {
-		font-size: 20px;
+		font-size: 25px;
 		margin-left: 30px;
+		margin-bottom: 60px;
 	}
 	#resume-projects {
 		text-align: center;
