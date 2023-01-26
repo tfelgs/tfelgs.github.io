@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@500&family=Rowdies:wght@300&display=swap");
 @media screen and (device-width > 500px) {
 	#scrollbar1::-webkit-scrollbar {
 		width: 20px;
@@ -15,11 +15,11 @@
 	body,
 	html {
 		margin: 0;
-		font-family: "Rowdies", cursive;
+		font-family: "Merienda", Helvetica, sans-serif;
 		color: white;
 		font-size: 20px;
 		scroll-behavior: smooth;
-		line-height: 1.5em;
+		line-height: 1.5;
 		background: rgba(31, 31, 29, 0.8);
 	}
 	#header2,
@@ -94,10 +94,12 @@
 		font-size: 1vw;
 		margin: 0 auto;
 		float: left;
+		margin-top: 20px;
 	}
 	.main-nav {
 		position: relative;
 		left: 30vw;
+		top: 18px;
 	}
 	.main-nav ul {
 		padding: 0;
@@ -114,9 +116,13 @@
 		text-decoration: none;
 		color: #fff;
 	}
-	.banner img {
+	.banner1 img {
 		max-width: 100%;
 		vertical-align: top;
+	}
+	.banner2,
+	.banner3 {
+		display: none;
 	}
 	.resume-section,
 	.about-section,
@@ -155,19 +161,20 @@
 		float: right;
 		box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
 		border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+		font-weight: 500;
 	}
 	.text::first-letter {
-		font-family: "Rowdies", cursive;
+		font-family: "Merienda", Helvetica, sans-serif;
 		margin: -0.01em 0.1em -0.25em 0;
 		display: inline-table;
 		float: left;
 		font-size: 3.5em;
 		line-height: 1;
 	}
-	.text2 {
-		width: 100%;
-		text-align: center;
-		padding: 20px;
+	.text,
+	.resume-text,
+	.cardText {
+		font-family: Helvetica, sans-serif;
 	}
 	.contact-section {
 		height: 100vh;
@@ -197,7 +204,7 @@
 		float: left;
 	}
 	.cardTitle {
-		font-size: 40px;
+		font-size: 38px;
 		color: white;
 		font-weight: 300;
 		left: 20px;

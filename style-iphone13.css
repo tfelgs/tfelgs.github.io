@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@500&family=Rowdies:wght@300&display=swap");
 @media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
 	#scrollbar1::-webkit-scrollbar {
 		width: 20px;
@@ -14,12 +15,13 @@
 	body,
 	html {
 		margin: 0;
-		font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+		font-family: "Merienda", Helvetica, sans-serif;
 		color: white;
 		font-size: 20px;
 		scroll-behavior: smooth;
 		line-height: 1.5em;
 		background: rgba(31, 31, 29, 0.8);
+		line-height: 1.5;
 	}
 	#header2,
 	#header {
@@ -72,7 +74,7 @@
 		top: 50px;
 	}
 	.planeMessage {
-		font-size: 35px;
+		font-size: 30px;
 	}
 	#header .container {
 		display: flex;
@@ -93,11 +95,11 @@
 	.logo {
 		color: white;
 		position: fixed;
-		top: 4.5%;
+		top: 2.5%;
 		left: 25%;
 		margin: 0 auto;
 		margin-right: 50px;
-		font-size: 85px;
+		font-size: 75px;
 		animation: glow 100s infinite alternate;
 		float: left;
 	}
@@ -124,6 +126,7 @@
 		float: right;
 		box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
 		border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+		font-weight: 500;
 	}
 	.title {
 		font-size: 80px;
@@ -141,7 +144,7 @@
 		display: none;
 	}
 	.text::first-letter {
-		font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+		font-family: "Merienda", Helvetica, sans-serif;
 		margin: -0.01em 0.2em -0.25em 0;
 		display: inline-table;
 		float: left;
@@ -165,10 +168,10 @@
 		border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 		float: left;
 	}
-	.text2 {
-		width: 100%;
-		text-align: center;
-		padding: 20px;
+	.text,
+	.resume-text,
+	.cardText {
+		font-family: Helvetica, sans-serif;
 	}
 	.bar,
 	.emptybar,
@@ -204,7 +207,6 @@
 	}
 	.cardTitle {
 		font-size: 55px;
-		line-height: 1;
 		color: white;
 		font-weight: 300;
 		left: 20px;
@@ -276,7 +278,11 @@
 		align-items: center;
 		text-align: center;
 	}
-	.banner img {
+	.banner1,
+	.banner3 {
+		display: none;
+	}
+	.banner2 img {
 		width: 100%;
 		vertical-align: top;
 	}
