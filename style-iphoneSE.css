@@ -71,6 +71,9 @@
 		position: absolute;
 		top: 50px;
 	}
+	.planeMessage {
+		font-size: 35px;
+	}
 	#header .container {
 		display: flex;
 		justify-content: space-between;
@@ -90,23 +93,16 @@
 	.logo {
 		color: white;
 		position: fixed;
-		top: 4%;
-		left: 30%;
+		top: 5.5%;
+		left: 25%;
 		margin: 0 auto;
 		margin-right: 50px;
-		font-size: 50px;
+		font-size: 85px;
 		animation: glow 100s infinite alternate;
 		float: left;
 	}
 	.jobTitle {
-		color: white;
-		position: fixed;
-		top: 6%;
-		left: 61%;
-		font-size: 30px;
-		margin: 0 auto;
-		margin-right: 6rem;
-		float: left;
+		display: none;
 	}
 	.resume-section,
 	.about-section,
@@ -262,6 +258,7 @@
 		cursor: pointer;
 		opacity: 100%;
 		transition: opacity 0.5s;
+		z-index: 100;
 	}
 	.back-to-top:hover {
 		opacity: 60%;
@@ -342,6 +339,9 @@
 	i-3 {
 		color: white;
 	}
+	.mediaIcon {
+		font-size: 80px;
+	}
 
 	/* Cool navigation for iphones */
 	#header {
@@ -362,7 +362,7 @@
 	}
 	#toggle:checked ~ .nav {
 		pointer-events: auto;
-		transform: translate(90px, 40px);
+		transform: translate(0px, 80px);
 	}
 	#toggle:checked ~ .nav .nav-item {
 		color: white;
@@ -370,6 +370,7 @@
 		height: 60px;
 		line-height: 60px;
 		margin-top: 0;
+		padding-bottom: 40px;
 		opacity: 1;
 		transform: scaleY(1);
 		transition: 0.5s, opacity 0.1s;
