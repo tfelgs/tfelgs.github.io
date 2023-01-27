@@ -36,6 +36,33 @@
 		width: 86%;
 		margin: 0 auto;
 	}
+	#mediaBar {
+		position: fixed;
+		height: 10rem;
+		width: 40px;
+		top: 30%;
+		list-style: none;
+		margin: 0;
+	}
+	.mediaBarIcon {
+		color: black;
+		font-size: 30px;
+		height: 38px;
+		width: 38px;
+		margin: 0;
+		text-align: center;
+		color: white;
+		vertical-align: bottom;
+		padding: 12px;
+		padding-top: 15px;
+	}
+	.mediaBarIcon:hover {
+		padding-right: 18px;
+		padding-left: 18px;
+	}
+	.fa-less-than {
+		background-color: transparent;
+	}
 	.container2 {
 		width: 86%;
 		margin: 0 auto;
@@ -153,14 +180,11 @@
 		float: left;
 	}
 	.text {
-		color: black;
+		color: white;
 		margin: 6vh;
 		margin-top: 10vh;
 		padding: 20px;
-		background-color: rgb(205, 252, 240);
 		float: right;
-		box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
-		border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 		font-weight: 500;
 	}
 	.text::first-letter {
