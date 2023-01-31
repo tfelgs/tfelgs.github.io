@@ -1,0 +1,15 @@
+@media only screen and (min-device-height: 1001px) and (min-device-width: 400px) {
+	.card:not(:first-child) {
+		margin-left: -13vw;
+		float: left;
+	}
+	.card:hover {
+		transform: translateY(-40px);
+		transition: 0.4s ease-out;
+	}
+	.card:hover ~ .card {
+		left: 36vw;
+		position: relative;
+		transition: 0.4s ease-out;
+	}
+}
