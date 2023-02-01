@@ -121,7 +121,6 @@ html {
 .logo {
 	color: white;
 	font-size: 2vw;
-	animation: glow 100s infinite alternate;
 	float: left;
 	margin-right: 20px;
 }
@@ -131,6 +130,7 @@ html {
 	margin: 0 auto;
 	float: left;
 	margin-top: 20px;
+	font-weight: 100;
 }
 .main-nav {
 	float: right;
@@ -337,23 +337,6 @@ html {
 }
 .contact-row {
 	width: 100%;
-}
-.media {
-	margin-top: 13rem;
-	text-align: center;
-}
-.media > li {
-	display: inline;
-	margin-right: 5vw;
-	margin-left: 5vw;
-}
-.media > li > a {
-	text-decoration: none;
-}
-i-1,
-i-2,
-i-3 {
-	color: white;
 }
 .back-to-top {
 	position: fixed;
